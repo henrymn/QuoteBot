@@ -11,7 +11,7 @@ client.on('message', msg => {
 	const match = msg.content.match(command);
 	if( match) {
 		if( msg.mentions.channels.size !== 1) {
-			msg.reply('quote requires exactly 1 Channel mention.\nUsage: `$snap #channel-name` or `$snap #channel-name messageID` or `$snap #channel-name message content`');
+			msg.reply('quote requires exactly 1 Channel mention.\nUsage: `?quote #channel-name` or `?quote #channel-name messageID` or `?quote #channel-name message content`');
 		}
 		else {
 			const target = msg.mentions.channels.first();
